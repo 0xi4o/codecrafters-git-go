@@ -27,6 +27,9 @@ func main() {
 
 		fmt.Println("Initialized git directory")
 
+	case "cat-file":
+		catFile(os.Args)
+
 	default:
 		fmt.Fprintf(os.Stderr, "Unknown command %s\n", command)
 		os.Exit(1)
