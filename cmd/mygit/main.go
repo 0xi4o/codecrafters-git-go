@@ -30,6 +30,9 @@ func main() {
 	case "cat-file":
 		catFile(os.Args)
 
+	case "hash-object":
+		hashObject(os.Args)
+
 	default:
 		fmt.Fprintf(os.Stderr, "Unknown command %s\n", command)
 		os.Exit(1)
